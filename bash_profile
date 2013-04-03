@@ -6,6 +6,7 @@
 #
 ############################
 
+PS1="\u@\h:\w\a\$ " # customize bash prompt
 
 export TERM=xterm-color
 
