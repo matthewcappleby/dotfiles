@@ -36,6 +36,8 @@ Bundle 'gmarik/vundle'
 "" My bundles (GitHub)
 "Powerline: awesome Vim status line
 "Bundle 'Lokaltog/powerline'      
+"set laststatus=2   " Always show the statusline
+"set ambiwidth=single
 
 "NERDtree: file tree viewer
 Bundle 'scrooloose/nerdtree'
@@ -50,8 +52,18 @@ Bundle 'scrooloose/nerdcommenter'
 "Colorschems: so many colors
 Bundle 'flazz/vim-colorschemes'
 
-filetype plugin on        " required by Vundle
+"Surround: allows editing an elements surroundings
+Bundle 'surround.vim'
 
+"Tabline: configuration for vim tabline
+"Bundle 'mkitt/tabline.vim'
+"hi TabLine      ctermfg=Black  ctermbg=Green     cterm=NONE
+"hi TabLineFill  ctermfg=Black  ctermbg=Green     cterm=NONE
+"hi TabLineSel   ctermfg=White  ctermbg=DarkBlue  cterm=NONE
+
+filetype plugin on        " required by Vundle
+filetype indent on        " indents based on filetype
+                          " (added this to work with html)
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "                     General                       "
@@ -64,6 +76,22 @@ syntax enable                    " enable syntax highlighting
 set encoding=utf-8
 set showcmd                     " display incomplete commands
 "filetype plugin indent on       " load file type plugins + indentation
+
+" toggle paste mode with visual feedback
+nnoremap <leader>p :set invpaste paste?<CR>
+set pastetoggle=<leader>p
+set showmode
+
+" open .vimrc in new tab to edit
+nmap <leader>v :tabedit $MYVIMRC<CR>
+
+" bind \R to resource .vimrc configuration file
+nnoremap <leader>R :source $MYVIMRC<CR>
+
+" Source the vimrc file after saving it
+"if has("autocmd")
+"  autocmd bufwritepost .vimrc source $MYVIMRC
+"endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
