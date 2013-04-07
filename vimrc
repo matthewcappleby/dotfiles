@@ -52,9 +52,8 @@ Bundle 'scrooloose/nerdcommenter'
 "Colorschems: so many colors
 Bundle 'flazz/vim-colorschemes'
 
-<<<<<<< HEAD
 filetype indent plugin on        " required by Vundle
-=======
+
 "Surround: allows editing an elements surroundings
 Bundle 'surround.vim'
 
@@ -63,7 +62,6 @@ Bundle 'surround.vim'
 "hi TabLine      ctermfg=Black  ctermbg=Green     cterm=NONE
 "hi TabLineFill  ctermfg=Black  ctermbg=Green     cterm=NONE
 "hi TabLineSel   ctermfg=White  ctermbg=DarkBlue  cterm=NONE
->>>>>>> 9fca497a3f819d3aa7e755d6d98f9f391fa963ca
 
 filetype plugin on        " required by Vundle
 filetype indent on        " indents based on filetype
@@ -79,8 +77,6 @@ set autoindent
 syntax enable                    " enable syntax highlighting
 set encoding=utf-8
 set showcmd                     " display incomplete commands
-<<<<<<< HEAD
-=======
 
 " toggle paste mode with visual feedback
 nnoremap <leader>p :set invpaste paste?<CR>
@@ -97,7 +93,6 @@ nnoremap <leader>R :source $MYVIMRC<CR>
 "if has("autocmd")
 "  autocmd bufwritepost .vimrc source $MYVIMRC
 "endif
->>>>>>> 9fca497a3f819d3aa7e755d6d98f9f391fa963ca
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
