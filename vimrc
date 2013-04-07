@@ -75,7 +75,6 @@ set autoindent
 syntax enable                    " enable syntax highlighting
 set encoding=utf-8
 set showcmd                     " display incomplete commands
-"filetype plugin indent on       " load file type plugins + indentation
 
 " toggle paste mode with visual feedback
 nnoremap <leader>p :set invpaste paste?<CR>

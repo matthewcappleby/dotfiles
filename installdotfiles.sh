@@ -31,8 +31,9 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
+# install vundle on first install
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle 
+
 # install bundles from sources
 vim +BundleInstall +qall 
 
-# install vundle on first install
-# git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle 
