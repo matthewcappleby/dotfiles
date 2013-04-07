@@ -130,7 +130,8 @@ alias orig 'cp -p \!:1 \!:1.orig'	# backup file
 alias sanitycheck '/afs/ir/class/cs107/bin/sanitycheck' # run sanitycheck
 alias leakcheck 'valgrind --leak-check=full --show-reachable=yes' # leak check shortcut
 alias emacs 'emacs -nw' #starts emacs in no window mode
-alias submit '/afs/ir/class/cs107/bin/submit' # run cs107 submit
+#alias submit '/afs/ir/class/cs107/bin/submit' # run cs107 submit
+alias submit '/usr/class/cs142/bin/submit' #run cs142 submit
 alias valgrinddb 'valgrind --db-attach=yes --db-command="gdb -nw %f %p"' # attach gdb to valgrind
 alias rmate '~/rmate' #run rmate
 

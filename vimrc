@@ -50,7 +50,7 @@ Bundle 'scrooloose/nerdcommenter'
 "Colorschems: so many colors
 Bundle 'flazz/vim-colorschemes'
 
-filetype plugin on        " required by Vundle
+filetype indent plugin on        " required by Vundle
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -63,7 +63,6 @@ set autoindent
 syntax enable                    " enable syntax highlighting
 set encoding=utf-8
 set showcmd                     " display incomplete commands
-"filetype plugin indent on       " load file type plugins + indentation
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
