@@ -8,7 +8,8 @@
 
 dir=~/.dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="cshrc vimrc vim tmux.conf gitconfig"    # list of files/folders to symlink in homedir
+files="bash_profile vimrc vim tmux.conf gitconfig"    # list of files/folders to symlink in homedir
+                                                      # don't install bash_profile on ubuntu box
 
 ##########
 
@@ -30,4 +31,9 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
-#git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle 
+# install vundle on first install
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle 
+
+# install bundles from sources
+vim +BundleInstall +qall 
+
