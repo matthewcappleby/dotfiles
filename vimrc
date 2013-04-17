@@ -57,12 +57,6 @@ filetype indent plugin on        " required by Vundle
 "Surround: allows editing an elements surroundings
 Bundle 'surround.vim'
 
-"Tabline: configuration for vim tabline
-"Bundle 'mkitt/tabline.vim'
-"hi TabLine      ctermfg=Black  ctermbg=Green     cterm=NONE
-"hi TabLineFill  ctermfg=Black  ctermbg=Green     cterm=NONE
-"hi TabLineSel   ctermfg=White  ctermbg=DarkBlue  cterm=NONE
-
 filetype plugin on        " required by Vundle
 filetype indent on        " indents based on filetype
                           " (added this to work with html)
@@ -102,7 +96,7 @@ nnoremap <leader>R :source $MYVIMRC<CR>
 set t_Co=256
 
 set scrolloff=10
-"highlight LineNr ctermfg=grey ctermbg=black
+"highlight VertSplit ctermfg=black ctermbg=yellow
 "colorscheme github
 
 
