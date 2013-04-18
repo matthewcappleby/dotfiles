@@ -30,14 +30,24 @@ filetype off                     " required by Vundle
 set rtp+=~/.vim/bundle/vundle/   " required by Vundle
 call vundle#rc()                 " required by Vundle
 
+
 "" Vundle Bundle (GitHub)
 Bundle 'gmarik/vundle'
 
 "" My bundles (GitHub)
+
 "Powerline: awesome Vim status line
-"Bundle 'Lokaltog/powerline'      
-"set laststatus=2   " Always show the statusline
-"set ambiwidth=single
+"Bundle 'Lokaltog/vim-powerline'      
+Bundle 'Lokaltog/powerline'
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+set laststatus=2   " Always show the statusline
+set ambiwidth=single
+
+"MineBugExplorer: shows open buffers as tabs
+"Bundle 'fholgado/minibufexpl.vim'
+
+"VimRails: vim support for Ruby on Rails
+Bundle 'tpope/vim-rails'
 
 "NERDtree: file tree viewer
 Bundle 'scrooloose/nerdtree'
@@ -57,12 +67,6 @@ filetype indent plugin on        " required by Vundle
 "Surround: allows editing an elements surroundings
 Bundle 'surround.vim'
 
-"Tabline: configuration for vim tabline
-"Bundle 'mkitt/tabline.vim'
-"hi TabLine      ctermfg=Black  ctermbg=Green     cterm=NONE
-"hi TabLineFill  ctermfg=Black  ctermbg=Green     cterm=NONE
-"hi TabLineSel   ctermfg=White  ctermbg=DarkBlue  cterm=NONE
-
 filetype plugin on        " required by Vundle
 filetype indent on        " indents based on filetype
                           " (added this to work with html)
@@ -73,6 +77,7 @@ filetype indent on        " indents based on filetype
 set number                       " show line numbers
 set smartindent
 set autoindent
+set hidden                       " allows there to be unsaved buffers hidden
 
 syntax enable                    " enable syntax highlighting
 set encoding=utf-8
@@ -84,7 +89,7 @@ set pastetoggle=<leader>p
 set showmode
 
 " open .vimrc in new tab to edit
-nmap <leader>v :tabedit $MYVIMRC<CR>
+nmap <leader>v :edit $MYVIMRC<CR>
 
 " bind \R to resource .vimrc configuration file
 nnoremap <leader>R :source $MYVIMRC<CR>
