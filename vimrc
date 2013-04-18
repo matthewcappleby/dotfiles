@@ -107,7 +107,7 @@ nnoremap <leader>R :source $MYVIMRC<CR>
 set t_Co=256
 
 set scrolloff=10
-"highlight LineNr ctermfg=grey ctermbg=black
+"highlight VertSplit ctermfg=black ctermbg=yellow
 "colorscheme github
 
 
