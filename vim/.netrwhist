@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/afs/ir.stanford.edu/class/cs107/samples'
-let g:netrw_dirhist_2='/afs/ir.stanford.edu/users/m/a/mappleby/.vim'
-let g:netrw_dirhist_3='/afs/ir.stanford.edu/users/m/a/mappleby/cs107/assign3'
