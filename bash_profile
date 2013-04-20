@@ -18,3 +18,5 @@ alias ls='ls -GF' # ls displays with color and file/directory/link info
 alias cp='cp -i'  # prompt before overwriting file
 alias mv='mv -i'  # prompt before overwriting file
 alias rm='rm -i'  # prompt before removing file
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
