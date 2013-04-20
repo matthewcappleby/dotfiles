@@ -86,7 +86,7 @@ set showcmd                     " display incomplete commands
 " toggle paste mode with visual feedback
 nnoremap <leader>p :set invpaste paste?<CR>
 set pastetoggle=<leader>p
-set showmode
+set noshowmode
 
 " open .vimrc in new tab to edit
 nmap <leader>v :edit $MYVIMRC<CR>
@@ -99,6 +99,15 @@ nnoremap <leader>R :source $MYVIMRC<CR>
 "  autocmd bufwritepost .vimrc source $MYVIMRC
 "endif
 
+" Makes ESCAPE exit insert mode faster
+if ! has('gui_running')
+    set ttimeoutlen=10
+    augroup FastEscape
+        autocmd!
+        au InsertEnter * set timeoutlen=0
+        au InsertLeave * set timeoutlen=1000
+    augroup END
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "                    Interface                      "
