@@ -6,7 +6,7 @@
 #
 ############################
 
-PS1="\[\e[32;1m\]\u@\h\]:\[\w\a\\]$ \[\e[0m\]\]" # customize bash prompt
+PS1="\[\e[36;1m\]\u@\h\]:\[\w\a\\]$ \[\e[0m\]\]" # customize bash prompt
 
 export TERM=xterm-color
 export PATH=/usr/local/bin:$PATH
