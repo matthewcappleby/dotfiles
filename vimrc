@@ -37,7 +37,6 @@ Bundle 'gmarik/vundle'
 "" My bundles (GitHub)
 
 "Powerline: awesome Vim status line
-"Bundle 'Lokaltog/vim-powerline'      
 Bundle 'Lokaltog/powerline'
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 set laststatus=2   " Always show the statusline
@@ -140,4 +139,7 @@ set smarttab                    " smarter tab levels
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
+
+map <C-j> :bprev<CR>
+map <C-k> :bnext<CR>
 
