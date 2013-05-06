@@ -6,7 +6,7 @@
 "   Matthew Appleby
 "
 " Version:
-"   1.0 - 2/27/13
+"   1.1 - 4/6/13
 "
 " Plugin Manager:
 "   Vundle (https://github.com/gmarik/vundle)
