@@ -42,7 +42,7 @@ set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 set laststatus=2   " Always show the statusline
 set ambiwidth=single
 
-"MineBugExplorer: shows open buffers as tabs
+"MiniBufExplorer: shows open buffers as tabs
 "Bundle 'fholgado/minibufexpl.vim'
 
 "VimRails: vim support for Ruby on Rails
