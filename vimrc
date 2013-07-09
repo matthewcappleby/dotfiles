@@ -48,6 +48,9 @@ set ambiwidth=single
 "VimRails: vim support for Ruby on Rails
 Bundle 'tpope/vim-rails'
 
+"AutomaticLaTexPlugin: provides support for LaTeX documents
+Bundle 'vim-scripts/AutomaticLaTexPlugin'
+
 "NERDtree: file tree viewer
 Bundle 'scrooloose/nerdtree'
 nnoremap <leader>nt :NERDTreeToggle<CR>
