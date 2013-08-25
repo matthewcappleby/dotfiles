@@ -18,6 +18,7 @@ export TERM=xterm-color
 export PATH=/usr/local/bin:$PATH
 
 alias myth='ssh -R 52698:127.0.0.1:52698 mappleby@myth.stanford.edu'
+alias minecraft='ssh minecraft@marlana.ist.nu'
 alias pi='ssh pi@192.168.1.36'
 alias irb='irb --simple-prompt'
 alias vi='vim -u NONE'
