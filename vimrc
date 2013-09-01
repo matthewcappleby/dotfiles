@@ -36,20 +36,16 @@ Bundle 'gmarik/vundle'
 
 "" My bundles (GitHub)
 
-"Powerline: awesome Vim status line
-Bundle 'Lokaltog/powerline'
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+"vim-ariline
+Bundle 'bling/vim-airline'
+let g:airline_powerline_fonts = 1
 set laststatus=2   " Always show the statusline
-set ambiwidth=single
 
 "MiniBufExplorer: shows open buffers as tabs
 "Bundle 'fholgado/minibufexpl.vim'
 
 "VimRails: vim support for Ruby on Rails
 Bundle 'tpope/vim-rails'
-
-"AutomaticLaTexPlugin: provides support for LaTeX documents
-Bundle 'vim-scripts/AutomaticLaTexPlugin'
 
 "NERDtree: file tree viewer
 Bundle 'scrooloose/nerdtree'
